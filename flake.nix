@@ -79,6 +79,10 @@
                 pkgs.libiconv
               ];
 
+            postInstall = ''
+              install shell-plugin "$out/share"
+            '';
+
             PROTOC = "${pkgs.protobuf}/bin/protoc";
             PROTOC_INCLUDE = "${pkgs.protobuf}/include";
             APP_VERSION = "0.1.0-dev";
