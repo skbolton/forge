@@ -80,7 +80,7 @@
               ];
 
             postInstall = ''
-              install shell-plugin "$out/share"
+              cp -R shell-plugin "$out/share"
             '';
 
             PROTOC = "${pkgs.protobuf}/bin/protoc";
