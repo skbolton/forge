@@ -77,9 +77,6 @@
               ]
               ++ lib.optionals pkgs.stdenv.isDarwin [
                 pkgs.libiconv
-                pkgs.darwin.apple_sdk.frameworks.AppKit
-                pkgs.darwin.apple_sdk.frameworks.CoreGraphics
-                pkgs.darwin.apple_sdk.frameworks.Foundation
               ];
 
             PROTOC = "${pkgs.protobuf}/bin/protoc";
@@ -147,9 +144,6 @@
               ]
               ++ lib.optionals pkgs.stdenv.isDarwin [
                 pkgs.libiconv
-                pkgs.darwin.apple_sdk.frameworks.AppKit
-                pkgs.darwin.apple_sdk.frameworks.CoreGraphics
-                pkgs.darwin.apple_sdk.frameworks.Foundation
               ];
 
             PROTOC = "${pkgs.protobuf}/bin/protoc";
